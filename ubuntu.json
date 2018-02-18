@@ -15,7 +15,7 @@
         ["-m", "2048"],
         ["-smp", "2"]
       ],
-      "headless": true,
+      "headless": false,
       "http_directory": ".",
       "format": "qcow2",
       "disk_size": "{{user `disk_size`}}",
@@ -50,7 +50,7 @@
       "type": "virtualbox-iso",
       "guest_os_type": "Ubuntu_64",
       "guest_additions_mode": "attach",
-      "headless": true,
+      "headless": false,
       "http_directory": ".",
       "vboxmanage": [
         ["modifyvm", "{{.Name}}", "--memory", "2048"],
